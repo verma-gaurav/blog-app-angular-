@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
 import { Routes, RouterModule } from '@angular/router'; 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { Routes, RouterModule } from '@angular/router';
     MatDialogModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,MatCheckboxModule,RouterModule
+    HttpClientModule,MatCheckboxModule,RouterModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent],

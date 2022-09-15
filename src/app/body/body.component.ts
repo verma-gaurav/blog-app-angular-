@@ -44,12 +44,14 @@ export class BodyComponent implements OnInit {
 
   }
 
-  checkedrejected(){
-    
-  }
-  
-  checkedapproved(){
-    
-  }
 
+  filteredData(event:any){
+    console.log(event.value)
+    const condition = event.value === 'all' ? '' : `?${event.value}=true`
+    this.http
+      .get(`http://localhost:3000/blog${condition}`)
+      .subscribe((res:any) => {
+        this.api.blogList = [...res];
+      });
+  }
 }

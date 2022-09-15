@@ -1,8 +1,14 @@
 <h2 *ngIf="api.loggedInUserType === 'user'"> Welcome User</h2>
 <h2 *ngIf="api.loggedInUserType === 'admin'"> Welcome Admin</h2>
 
-<mat-checkbox class="example-margin" (change)="checkedapproved()">Approved</mat-checkbox>
-<mat-checkbox class="example-margin" (change)="checkedrejected()">Rejected</mat-checkbox>
+<mat-radio-group aria-label="Select an option" (change)="filteredData($event)">
+  <mat-radio-button value="all">All</mat-radio-button>
+  <mat-radio-button value="isApproved">Approved</mat-radio-button>
+  <mat-radio-button value="isRejected">Rejected</mat-radio-button>
+</mat-radio-group>
+
+<!-- <mat-checkbox class="example-margin" (change)="checkedapproved($event, 'isApproved')">Approved</mat-checkbox>
+<mat-checkbox class="example-margin" (change)="checkedapproved($event, 'isRejected')">Rejected</mat-checkbox> -->
 
 
 <div class="main" *ngFor="let item of api.blogList"
