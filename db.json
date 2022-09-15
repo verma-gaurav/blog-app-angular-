@@ -1,0 +1,37 @@
+{
+  "blog": [
+    {
+      "title": "qwerty",
+      "desc": "ewrtjfhgrtysfjdgdrtyedjhgftyertujfkghdytretjfhkghtyrewtudjfkg",
+      "id": 1,
+      "isApproved": true,
+      "isRejected": false
+    },
+    {
+      "title": "sdfdsf",
+      "desc": "dsfsdf",
+      "id": 2,
+      "isApproved": true,
+      "isRejected": false
+    },
+    {
+      "title": "How to Bootstrap Angular",
+      "desc": "By Using Platform JS",
+      "id": 3,
+      "isApproved": true,
+      "isRejected": false
+    }
+  ],
+  "login": [
+    {
+      "email": "user@gmail.com",
+      "password": "123456",
+      "type": "user"
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "type": "admin"
+    }
+  ]
+}

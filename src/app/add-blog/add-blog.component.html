@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>New Blog</h1>
+<form class="main" [formGroup]="blogForm" (ngSubmit)="submitBlog()">
+  <h2>Title</h2>
+  <input formControlName="title" name="title" />
+  <h4>Description</h4>
+  <input formControlName="desc" name="title" />
+  <button class="submit-btn" (click)="closeDialog()">Submit</button>
+</form>

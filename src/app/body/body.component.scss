@@ -1,0 +1,46 @@
+.main {
+  text-align: center;
+  background-color: white;
+  width: 35%;
+  height: auto;
+  min-height: 20%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 3%;
+  padding: 1%;
+  box-shadow: 5px 5px 8px rgb(184, 180, 180);
+}
+.approve {
+  background-color: rgb(173, 240, 177);
+}
+.reject {
+  background-color: rgb(240, 173, 173);
+}
+.title {
+  width: 100%;
+  height: auto;
+  min-height: 15%;
+}
+.decs {
+  width: 100%;
+  height: auto;
+  min-height: 15%;
+}
+.approveBtn {
+  color: white;
+  background-color: green;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.rejectBtn {
+  color: white;
+  background-color: rgb(128, 0, 0);
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.btn-div {
+  justify-content: space-between;
+  display: flex;
+}
