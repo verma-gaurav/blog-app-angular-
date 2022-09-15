@@ -1,26 +1,22 @@
-<div
-  class="main"
-  *ngFor="let item of api.blogList"
-  [ngClass]="item.isApproved ? 'approve' : item.isRejected ? 'reject' : ''"
->
+<h2 *ngIf="api.loggedInUserType === 'user'"> Welcome User</h2>
+<h2 *ngIf="api.loggedInUserType === 'admin'"> Welcome Admin</h2>
+
+<mat-checkbox class="example-margin" (change)="checkedapproved()">Approved</mat-checkbox>
+<mat-checkbox class="example-margin" (change)="checkedrejected()">Rejected</mat-checkbox>
+
+
+<div class="main" *ngFor="let item of api.blogList"
+  [ngClass]="item.isApproved ? 'approve' : item.isRejected ? 'reject' : ''">
   <h2 class="title">{{ item.title }}</h2>
   <br />
   <p class="decs">{{ item.desc }}</p>
   <div class="btn-div">
-    <button
-      class="approveBtn"
-      *ngIf="api.loggedInUserType === 'admin'"
-      [disabled]="item.isApproved"
-      (click)="approved(item)"
-    >
+    <button class="approveBtn" *ngIf="api.loggedInUserType === 'admin'" [disabled]="item.isApproved"
+      (click)="approved(item)">
       {{ item.isApproved ? "Approved" : "Approve" }}
     </button>
-    <button
-      class="rejectBtn"
-      *ngIf="api.loggedInUserType === 'admin'"
-      (click)="rejected(item)"
-      [disabled]="item.isRejected"
-    >
+    <button class="rejectBtn" *ngIf="api.loggedInUserType === 'admin'" (click)="rejected(item)"
+      [disabled]="item.isRejected">
       {{ item.isRejected ? "Rejected" : "Reject" }}
     </button>
   </div>

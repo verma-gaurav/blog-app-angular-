@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { AddBlogComponent } from '../add-blog/add-blog.component';
+import { ApiService } from '../services/api.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -9,15 +11,21 @@ import { AddBlogComponent } from '../add-blog/add-blog.component';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog, public api: ApiService, private router : Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.api.getBlog();
+  }
   // addBlog = () => {
-  //   this.router.navigate(['add-blog']);
+  //   c
   // };
   openDialog = () => {
     this.dialog.open(AddBlogComponent);
+     this.api.getBlog();
   };
-  rejectedBlog = () => {};
-  approvedBlog = () => {};
+  logout(){
+    this.router.navigate(['login']);
+  }
+  approvedBlog(){}
+  rejectedBlog(){}
 }

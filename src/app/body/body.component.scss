@@ -6,7 +6,7 @@
   min-height: 20%;
   border-radius: 10px;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 2%;
   padding: 1%;
   box-shadow: 5px 5px 8px rgb(184, 180, 180);
 }
@@ -17,6 +17,7 @@
   background-color: rgb(240, 173, 173);
 }
 .title {
+  margin-top: 5%;
   width: 100%;
   height: auto;
   min-height: 15%;
@@ -32,13 +33,16 @@
   padding: 15px;
   cursor: pointer;
   border-radius: 15px;
+  outline: 0;
+  border : 0
 }
 .rejectBtn {
   color: white;
   background-color: rgb(128, 0, 0);
   padding: 15px;
   border-radius: 15px;
-  cursor: pointer;
+  cursor: pointer;  outline: 0;
+  border : 0
 }
 .btn-div {
   justify-content: space-between;

@@ -41,5 +41,15 @@ export class BodyComponent implements OnInit {
         alert('Rejected');
         this.api.getBlog();
       });
+
   }
+
+  checkedrejected(){
+    
+  }
+  
+  checkedapproved(){
+    
+  }
+
 }

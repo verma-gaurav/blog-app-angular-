@@ -5,6 +5,7 @@ $nav-height: 70px;
 $nav-background: #444444;
 $nav-font-color: #ffffff;
 $link-hover-color: #4caf50;
+$link-hover-color-logout: #af4c4c;
 
 // Outer navigation wrapper
 .navigation {
@@ -158,3 +159,16 @@ article {
   color: $nav-font-color;
   text-decoration: none;
 }
+.logout{
+  display: block;
+  padding: 0 20px;
+  line-height: $nav-height;
+  background: $nav-background;
+  color: $nav-font-color;
+  text-decoration: none;
+  color: red
+}
+.logout:hover{  cursor: pointer;
+  background: $link-hover-color-logout;
+  color: $nav-font-color;
+  border-radius: 20px;}

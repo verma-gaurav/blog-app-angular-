@@ -14,6 +14,8 @@ import { AddBlogComponent } from './add-blog/add-blog.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { Routes, RouterModule } from '@angular/router'; 
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     MatDialogModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule,MatCheckboxModule,RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],
