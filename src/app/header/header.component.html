@@ -8,10 +8,13 @@
         <a id="nav-toggle" href="#!"><span></span></a>
       </div>
       <ul class="nav-list">
-        <li (click)="openDialog()" class="a" *ngIf="api.loggedInUserType === 'user'">Add Blog</li>
-        <li (click)="approvedBlog()" class="a" *ngIf="api.loggedInUserType === 'user'">Approved Blog</li>
-
-        <li (click)="rejectedBlog()" class="a" *ngIf="api.loggedInUserType === 'user'">Rejected Blog</li>
+        <li
+          (click)="openDialog()"
+          class="a"
+          *ngIf="api.loggedInUserType === 'user'"
+        >
+          Add Blog
+        </li>
         <li (click)="logout()" class="logout">Logout</li>
       </ul>
     </nav>
