@@ -8,11 +8,7 @@
         <a id="nav-toggle" href="#!"><span></span></a>
       </div>
       <ul class="nav-list">
-        <li
-          (click)="openDialog()"
-          class="a"
-          *ngIf="api.loggedInUserType === 'user'"
-        >
+        <li (click)="openDialog()" class="a">
           Add Blog
         </li>
         <li (click)="logout()" class="logout">Logout</li>

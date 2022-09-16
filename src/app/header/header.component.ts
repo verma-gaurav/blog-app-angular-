@@ -14,18 +14,15 @@ export class HeaderComponent implements OnInit {
   constructor(private dialog: MatDialog, public api: ApiService, private router : Router) {}
 
   ngOnInit(): void {
-    this.api.getBlog();
+
   }
-  // addBlog = () => {
-  //   c
-  // };
+
   openDialog = () => {
     this.dialog.open(AddBlogComponent);
-     this.api.getBlog();
+
   };
   logout(){
     this.router.navigate(['login']);
   }
-  approvedBlog(){}
-  rejectedBlog(){}
+
 }

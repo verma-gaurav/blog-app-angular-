@@ -1,11 +1,11 @@
 .main {
   display: block;
-  width: 100%;
+  width: 50vh;
 }
 .submit-btn {
   height: 50px;
   width: 30%;
-  background-color: rgb(179, 69, 69);
+  background-color: rgb(196, 0, 0);
   color: white;
   border-color: none;
   border-radius: 10px;
@@ -16,7 +16,7 @@
 }
 .submit-btn:hover {
   cursor: pointer;
-  background-color: rgb(84, 69, 179);
+  background-color: rgb(108, 85, 255);
 }
 input{
   font-family: "Roboto", sans-serif;
@@ -29,4 +29,5 @@ input{
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+
 }

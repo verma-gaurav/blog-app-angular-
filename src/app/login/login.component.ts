@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
       if (Object.keys(user).length) {
         this.router.navigate(['body']);
       }
+
       this.api.loggedInUserType = user['type'];
     });
   }
