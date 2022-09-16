@@ -1,12 +1,20 @@
+.gridstyle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 11px;
+  grid-row-gap: 11px;
+  justify-content: center;
+  align-items: center;
+}
 .main {
   text-align: center;
-  background-color: white;
-  width: 35%;
+  background-color: rgb(247, 247, 255);
+  min-width: 15%;
+  width: auto;
   height: auto;
   min-height: 20%;
   border-radius: 10px;
-  margin: auto;
-  margin-top: 2%;
   padding: 1%;
   box-shadow: 5px 5px 8px rgb(184, 180, 180);
 }
@@ -54,10 +62,11 @@
   justify-content: space-between;
   text-align: center;
   background-color: rgb(212, 212, 212);
-  width: 35%;
+  width: 20%;
   margin: auto;
   border-radius: 10px;
   margin-top: 2%;
   padding: 1%;
+  margin-bottom: 3%;
   box-shadow: 5px 5px 8px rgb(184, 180, 180);
 }
